@@ -1,4 +1,4 @@
-import AboutUs from './AboutUs/AboutUs';
+import AboutUs from './AboutUs';
 import Chef from './Chef/Chef';
 import FindUs from './Findus/FindUs';
 import Footer from './Footer/Footer';
