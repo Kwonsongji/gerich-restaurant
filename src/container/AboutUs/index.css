@@ -44,3 +44,17 @@
   color: var(--color-grey);
 }
 
+@media screen and (min-width: 2000px) {
+
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+@media screen and (min-width: 650px) {
+  app__aboutus-overlay img {
+    width:  80%;
+    height: 320px;
+  }
+}
