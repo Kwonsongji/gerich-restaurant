@@ -30,10 +30,8 @@
 }
 .app__specialMenu-menu_img {
   width: 410px;
-  margin: 0 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* margin: 0 2rem; */
+
  
 }
 .app__specialMenu-menu_img img {
@@ -69,7 +67,7 @@
   }
 }
 @media screen and (max-width: 650px){
-  .app__specialMenu-menu_img img {
+  .app__specialMenu-menu_img {
     width: 100%;
   }
   .app__specialMenu-menu_heading{
