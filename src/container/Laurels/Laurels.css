@@ -3,7 +3,6 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
     margin-top: 3rem;
 }
 .app__laurels_awards-card {
@@ -15,11 +14,28 @@
     margin: 1rem;
 }
 
-/* @media screen and (min-width: 1900px) {
+.app__laurels_awards-card img {
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width: 1900px) {
     .app__laurels_awards-card {
-        max-width: 100%;
+        min-width: 390px;
     }
-} */
+} 
+
+.app__laurels_awards-card_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+@media screen and (max-width:450px) {
+  .app__laurels_awards-card{
+    min-width: 100%;
+    margin: 1rem 0;
+  }
+}
 .app__logo-img {
   margin-bottom: 90rem;
   display: flex;
@@ -29,29 +45,24 @@
 .app__logo-img img {
     width: 100px;
     height: 100px;
-}
-.app__laurels_awards-card img {
-    width: 50px;
-    height: 50px;
-}
+} 
 
 
-.app__laurels_awards-card_content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-}
+
 
 
 @media screen and (max-width:1150px) {
-  .app__wrapper-info {
-    margin-top:-80rem;
-    margin-bottom: 10rem ;
+  .app__wrapper-img {
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+  } 
+  .app__wrapper-img img {
+    margin-left: 0;
+    width: 900px;
   }
-  .app__wrapper-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .app__logo-img{
+    margin-bottom: 3rem;
     width: 100px;
   }
 }

@@ -3,7 +3,7 @@ import { SubHeading } from '../../components';
 import { images } from '../../constants';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import './Gallery.css';
-
+const galleryImages = [images.gallery01, images.gallery02, images.gallery03, images.gallery04];
 const Gallery = () => {
   const scrollRef = React.useRef(null);
   console.log('ref', scrollRef);
@@ -12,6 +12,8 @@ const Gallery = () => {
     
     if (direction === 'left') {
       current.scrollLeft -= 300; /* -= opérateur d'affectation qui soustrait*/
+    } else {
+      current.scrollLeft += 300;
     }
   }
   
@@ -26,7 +28,12 @@ const Gallery = () => {
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>
-            
+          {galleryImages.map((image, index) => (
+            <div className="app__gallery-images_cards flex__center" key={`gallery_images-${index + 1}`}>
+              <img src={image} alt="gallery__image" />
+              <BsInstagram className="gallery__image-icon"/>
+            </div>
+            ))}
         </div>
         <div className="app__gallery-images_arrow">
           <BsArrowLeftShort className="gallery__arrow-icons" onClick={() => scroll('left')} />
