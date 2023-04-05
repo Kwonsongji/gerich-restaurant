@@ -47,6 +47,11 @@
     height: 100px;
 } 
 
+@media screen and (max-width:1550px) {
+  .app__wrapper-img img {
+    width: 900px;
+  }
+}
 
 
 
@@ -59,7 +64,7 @@
   } 
   .app__wrapper-img img {
     margin-left: 0;
-    width: 900px;
+    width: 800px;
   }
   .app__logo-img{
     margin-bottom: 3rem;
